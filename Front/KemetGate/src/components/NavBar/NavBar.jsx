@@ -1,6 +1,6 @@
 import logo from '../../assets/ODxQQ06NX4-sVcPCCHJA5Q@2k.webp'
 const navigation = [
-  { name: 'Home', href: '#', current: true },
+  { name: 'Home', href: '/', current: true },
   { name: 'About', href: '#', current: false },
   { name: 'Destanitions', href: '#', current: false },
   { name: 'Gate', href: '#', current: false },
@@ -11,8 +11,8 @@ const navigation = [
 function NavBar  ()  {
   return (
 <>
-<div >
-  <nav className='flex flex-row items-center justify-between bg-black  rounded-lg'>
+<div  >
+  <nav className='flex flex-row items-center justify-between bg-black  '>
 <div className="logo flex items-center w-5/12 gap-4 ps-20">
   <img src={logo} alt="" className='w-auto h-16' />
   <a href='#' className='text-beige font-bold text-2xl font-adamina'>Kemet Gate</a>
