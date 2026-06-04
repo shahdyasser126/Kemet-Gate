@@ -13,11 +13,8 @@ function Journey(){
  
          
               <div  className=" bg-white/5 backdrop-blur-sm rounded-2xl   border border-gold/30 transition-all duration-500 hover:border-gold/80 hover:scale-105">
-                <img
-                  alt='img'
-                  src={before}
-                  className="  rounded-lg bg-white w-full    object-cover group-hover:opacity-75"
-                />
+                <img alt='img' src={before} className="  rounded-lg bg-white w-full object-cover "/>
+                
                   <div className="content    pb-5">
                 <h3 className="mt-6 text-3xl font-adamina font-medium text-gold">
                   <a href='/'>
@@ -32,11 +29,8 @@ function Journey(){
                 </div> </div>
 
                <div  className=" bg-white/5 backdrop-blur-sm rounded-2xl   border border-gold/30  transition-all duration-500 hover:border-gold/80 hover:scale-105">
-                <img
-                  alt='img'
-                  src={after}
-                  className="  rounded-lg w-full bg-white object-cover group-hover:opacity-75 "
-                />
+                <img alt='img' src={after} className="  rounded-lg w-full bg-white object-cover  "/>
+                  
                 <div className="content pb-5">
                 <h3 className="mt-6 text-3xl font-adamina font-medium text-gold">
                   <a href='/'>

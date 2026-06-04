@@ -1,21 +1,22 @@
-import img from '../../assets/gpt-image-2_Ancient_Egyptian_temple_corridor_at_sunset_massive_sandstone_columns_covered_wit-0.jpg'
+import img from '../../assets/ChatGPT Image Jun 4, 2026, 11_30_10 PM.png'
 import logo from '../../assets/ODxQQ06NX4-sVcPCCHJA5Q@2k.webp'
 import { IoMailOutline } from "react-icons/io5";
 import { CiLock } from "react-icons/ci";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 function LoginForm(){
 
     return(
         <>
         <section>
      
-        <div className="relative w-full min-h-screen bg-cover bg-center flex items-center"
+        <div className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat flex items-center p-10"
             style={{ backgroundImage: `url(${img})`, 
             }}>
 <div className="absolute inset-0 bg-black/70"></div>
 
 
-        <div className="bg-black/35 backdrop-blur-sm rounded-2xl  px-4  py-10 border m-auto border-gold/30 transition-all duration-500 hover:border-gold/80 hover:scale-105">
+        <div className="bg-black/35 backdrop-blur-sm rounded-2xl  px-4  py-10 border m-auto border-gold/30 transition-all duration-500 hover:border-gold/80 ">
     <div className="logo flex items-center justify-center ">
       <img src={logo} alt="" className='w-auto  h-32' />
       <a href='#' className='text-beige font-bold text-3xl font-notoSerif'>Kemet Gate
@@ -53,8 +54,20 @@ function LoginForm(){
   <span className="block text-center font-medium">
     Login
   </span>
+  
   <FaLongArrowAltRight className="absolute right-4 top-1/2 -translate-y-1/2" />
 </button>
+<div className='flex flex-row items-center m-auto mt-6'>
+    <hr className='text-beige w-40 me-8'/> <p className='text-beige'>or</p>  <hr className='text-beige w-40 ms-8'/>
+  </div>
+
+  <button type="submit" className="bg-gold text-black mt-6 py-3 px-6 rounded-lg w-full  relative ">
+ <FcGoogle className='absolute top-1/2 -translate-y-1/2 left-24 text-lg' />
+   <span className="block text-center font-medium">
+    Continue with Google
+  </span>
+</button>
+  <p className='text-beige mt-6 text-center'>Don't have an account ?  <a href="/register" className='text-gold'>Register Here</a></p>
        </form>  
       </div>
         
