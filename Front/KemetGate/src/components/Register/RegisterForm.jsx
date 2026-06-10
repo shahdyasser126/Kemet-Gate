@@ -16,7 +16,7 @@ function RegisterForm(){
         <>
         <section>
      
-        <div className="relative w-full min-h-screen bg-no-repeat bg-cover bg-center flex items-center p-10"
+        <div className="relative w-full min-h-screen bg-no-repeat bg-cover bg-center flex items-center p-6"
             style={{ backgroundImage: `url(${img})`, 
             }}>
 <div className="absolute inset-0 bg-black/70"></div>
@@ -35,7 +35,7 @@ function RegisterForm(){
       <h3 className="text-gold mt-3 font-adamina text-4xl">Create Your Account</h3>
    <p className="text-beige">Start Your Journey to ancient Egypt</p></div>
         
-        <form   className='flex flex-col w-full  px-1 py-16'>
+        <form   className='flex flex-col w-full  px-1 py-10'>
           <div className="relative w-96">
          <label className='text-white'>Full Name</label>
            <FaRegUser className="absolute left-3 top-[48px] text-gold text-xl"/>
@@ -56,7 +56,7 @@ function RegisterForm(){
 <button
         type="button"
         onClick={() => setShowPassword(!showPassword)}
-        className="absolute right-3 top-[48px] text-gold text-xl"
+        className="absolute right-3 top-[48px] text-gold text-xl "
       >
         {showPassword ? <IoEyeOffOutline /> : <IoEyeOutline />}
       </button>
@@ -82,7 +82,7 @@ function RegisterForm(){
    I agree to the <span className='text-gold'>Terms & Conditions and Privacy Policy</span> </label>
 </div>
               
-<button type="submit"   className="bg-gold text-black mt-6 py-3 px-6 rounded-lg w-full relative">
+<button type="submit"   className="bg-gold text-black mt-6 py-3 px-6 rounded-lg w-full relative transition-all duration-300 hover:bg-gold/85">
   <span className="block text-center font-medium">
     Register
   </span>
@@ -93,8 +93,8 @@ function RegisterForm(){
     <hr className='text-beige w-40 me-8'/> <p className='text-beige'>or</p>  <hr className='text-beige w-40 ms-8'/>
   </div>
 
-  <button type="submit" className="bg-gold text-black mt-6 py-3 px-6 rounded-lg w-full  relative ">
- <FcGoogle className='absolute top-1/2 -translate-y-1/2 left-24 text-lg' />
+  <button type="submit" className="bg-gold text-black mt-6 py-3 px-6 rounded-lg w-full  relativetransition-all duration-300 hover:bg-gold/85">
+ <FcGoogle className='absolute  -translate-y-1/4 left-28 text-xl mt-2'  />
    <span className="block text-center font-medium">
     Continue with Google
   </span>

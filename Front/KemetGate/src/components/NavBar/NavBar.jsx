@@ -1,7 +1,7 @@
 import logo from '../../assets/ODxQQ06NX4-sVcPCCHJA5Q@2k.webp'
 const navigation = [
   { name: 'Home', href: '/', current: true },
-  { name: 'About', href: '#', current: false },
+  { name: 'Explore', href: '/explore', current: false },
   { name: 'Destanitions', href: '#', current: false },
   { name: 'Gate', href: '#', current: false },
 ]

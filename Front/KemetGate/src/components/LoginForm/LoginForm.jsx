@@ -10,7 +10,7 @@ function LoginForm(){
         <>
         <section>
      
-        <div className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat flex items-center p-10"
+        <div className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat flex items-center p-6"
             style={{ backgroundImage: `url(${img})`, 
             }}>
 <div className="absolute inset-0 bg-black/70"></div>
@@ -29,7 +29,7 @@ function LoginForm(){
       <h3 className="text-gold mt-3 font-adamina text-5xl">Welcome Back</h3>
    <p className="text-beige">Login To Continue Your Journey</p></div>
         
-        <form   className='flex flex-col w-full  px-1 py-16'>
+        <form   className='flex flex-col w-full  px-1 py-10'>
             <div className="relative w-96">
          <label className='text-white'>Email Address</label>
            <IoMailOutline className="absolute left-3 top-[48px] text-gold text-xl"/>
@@ -50,7 +50,7 @@ function LoginForm(){
 </div>
          <p className='text-gold'>Forgot Password?</p>      
    </div>               
-<button type="submit" className="bg-gold text-black mt-6 py-3 px-6 rounded-lg w-full relative">
+<button type="submit" className="bg-gold text-black mt-6 py-3 px-6 rounded-lg w-full relative transition-all duration-300 hover:bg-gold/85">
   <span className="block text-center font-medium">
     Login
   </span>
@@ -61,7 +61,7 @@ function LoginForm(){
     <hr className='text-beige w-40 me-8'/> <p className='text-beige'>or</p>  <hr className='text-beige w-40 ms-8'/>
   </div>
 
-  <button type="submit" className="bg-gold text-black mt-6 py-3 px-6 rounded-lg w-full  relative ">
+  <button type="submit" className="bg-gold text-black mt-6 py-3 px-6 rounded-lg w-full  relative transition-all duration-300 hover:bg-gold/85">
  <FcGoogle className='absolute top-1/2 -translate-y-1/2 left-24 text-lg' />
    <span className="block text-center font-medium">
     Continue with Google
