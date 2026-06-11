@@ -1,6 +1,6 @@
 import img from '../../assets/Gemini_Generated_Image_rmwjocrmwjocrmwj.png'
 import { useState } from 'react'
-import { Label, Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/react'
+import { Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/react'
 import { ChevronUpDownIcon } from '@heroicons/react/16/solid'
 import { CheckIcon } from '@heroicons/react/20/solid'
 function ExploreHero(){
@@ -44,11 +44,9 @@ const Categories = [
     id: 4,
     name: 'Relaxing',
      },
-   
-  
-  
   
 ]
+
 const [selected, setSelected] = useState(Region[0])
 const [choose, setChoose] = useState(Categories[0])
   'use client'
@@ -77,7 +75,7 @@ const [choose, setChoose] = useState(Categories[0])
            
            </div>
                </div>
-   <div className='absolute left-[600px] top-52   bg-black/40 border border-gold flex flex-row items-center justify-between mt-56 p-3 rounded-2xl gap-12'>
+   <div className='absolute left-1/3 top-52   bg-black/40 border border-gold flex flex-row items-center justify-between mt-56 p-3 rounded-2xl gap-12'>
       <Listbox value={selected} onChange={setSelected}>
       <div className="relative mt-2">
         <ListboxButton className="grid w-full cursor-default grid-cols-1 rounded-md bg-transparent   py-1.5 pr-8 pl-12 text-left text-beige  border border-gold/30 ">
@@ -151,6 +149,7 @@ const [choose, setChoose] = useState(Categories[0])
         </ListboxOptions>
       </div>
     </Listbox>
+    <button className='bg-gold text-black  relative mt-2 w-28 p-1 text-lg text-center rounded'>Search</button>
    </div>
 
           </div>

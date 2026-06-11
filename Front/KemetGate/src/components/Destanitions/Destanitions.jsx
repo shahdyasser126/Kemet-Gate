@@ -47,7 +47,7 @@ const Destanition = [
     return(
         <>
         <div className="bg-gradient-to-b from-black/90 via-black to-black">
-      <div className='p-40'>
+      <div className='p-40 flex flex-col items-center'>
         <h2 className="text-gold  font-serif text-5xl  font-medium text-center">Explore Egypt Most Iconic Places</h2>
 
         <div className="mt-16 grid grid-cols-4 gap-10  ">
@@ -63,15 +63,7 @@ const Destanition = [
                 <i class="bi bi-geo-alt"style={{color:"gold",fontSize:"18px"}}></i>
                 <span className='text-gold text-lg'>{destanitionn.name}</span>
                 </div> 
-                {/* <div>
-                  <h3 className="text-sm text-gray-700">
-                    <a href={destanitionn.href}>
-                      <span aria-hidden="true" className="absolute inset-0" />
-                      {destanitionn.name}
-                    </a>
-                  </h3>
-                  <p className="mt-1 text-sm text-gray-500">{destanitionn.location}</p>
-                </div> */}
+               
                 <p className="text-xl font-medium text-beige">{destanitionn.description}</p>
                 <div className="flex gap-3 mt-3">
                 <i class="bi bi-star-fill"style={{color:"gold",fontSize:"18px"}}></i>
@@ -82,6 +74,10 @@ const Destanition = [
             </div>
           ))}
         </div>
+       
+            <button className='bg-gold text-black p-2 font-semibold transition-all duration-500 w-60 mt-14 rounded hover:bg-gold/70'>
+            <a href="/explore"> All Destanitions</a></button>
+      
       </div>
     </div>
         
